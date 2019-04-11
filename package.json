@@ -20,6 +20,7 @@
   "homepage": "https://github.com/kieuchicong99/server_for_toeic_android_app#readme",
   "heroku-run-build-script": true,
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3"
   }
 }
