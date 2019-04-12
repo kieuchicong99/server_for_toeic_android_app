@@ -10,7 +10,7 @@ const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://user:kcc130619991@ds135726.mlab.com:35726/appandroid';
 // const url = 'mongodb://localhost:27017/appAndroid';
 
-// const PORT cx= process.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
@@ -41,6 +41,6 @@ app.get('/:id', (req, res) => {
     });
   });
 
-app.listen(3000,()=>{
-    console.log(`Server is running on port 3000`);
+app.listen(PORT,()=>{
+    console.log(`Server is running on port ${PORT}`);
 });
