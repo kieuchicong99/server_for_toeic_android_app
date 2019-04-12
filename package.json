@@ -2,14 +2,13 @@
   "name": "server_for_toeic_android_app",
   "version": "1.0.0",
   "engines": {
-    "node": "10.15.2"
+    "node": "10.15.2",
+    "npm": "6.9.0"
   },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack install && grunt build",
-    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "repository": {
